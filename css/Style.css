@@ -27,3 +27,8 @@ span{
 	margin:0 auto;
 	background-color:green;
 }
+header{
+	min-height:56px;
+	background-color:#ffffff;
+	
+}
