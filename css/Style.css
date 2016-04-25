@@ -1,5 +1,5 @@
 body{
-	font-family:PT Sans;
+	font-family:"PT Sans";
 	font-weight:bold;
 	font-size:14px;
 	line-height:26px;
@@ -7,7 +7,7 @@ body{
 	text-transform:uppercase;
 }
 b{
-	font-family:PT Sans;
+	font-family:"PT Sans";
 	font-weight:bold;
 	font-size:21px;
 	line-height:21px;
@@ -15,8 +15,8 @@ b{
 	text-transform:uppercase;
 }
 span{
-	font-family:PT Sans Regular;
-	font-weight:Regular;
+	font-family:"PT Sans";
+	font-weight:normal;
 	font-size:14px;
 	line-height:21px;
 	color:#000000;
@@ -68,7 +68,7 @@ width:20%;
 .index-logo{
 	position:relative;
 }
-.inex-logo img{
+.index-logo img{
 	position:absolute;
 	bottom:0px;
 }
