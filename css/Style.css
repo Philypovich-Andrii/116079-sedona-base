@@ -29,6 +29,14 @@ span{
 }
 header{
 	background-color:#ffffff;
+	padding:0 6%;
+	position:relative;
+}
+header img{
+	position:absolute;
+	top:0px;
+	left:50%;
+	margin-left:-69px;
 }
 .clearfix::after {
   content: "";
@@ -39,11 +47,28 @@ header{
 .main-navigation{
 	min-height:56px;
 }
+.main-navigation ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.main-navigation li{
+width:20%;	
+}
 .main-navigation li:nth-child(1), 
 .main-navigation li:nth-child(2){
 	float:left;
+	text-align:left;
 }
 .main-navigation li:nth-child(3), 
 .main-navigation li:nth-child(4){
 	float:right;
+	text-align:right;
+}
+.index-logo{
+	position:relative;
+}
+.inex-logo img{
+	position:absolute;
+	bottom:0px;
 }
