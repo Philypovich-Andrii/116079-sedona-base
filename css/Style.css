@@ -32,11 +32,12 @@ header{
 	padding:0 6%;
 	position:relative;
 }
-header img{
+.small-logo{
 	position:absolute;
 	top:0px;
 	left:50%;
 	margin-left:-69px;
+	Z-index:10;
 }
 .clearfix::after {
   content: "";
@@ -67,11 +68,12 @@ width:20%;
 }
 .index-logo{
 	position:relative;
-	background-image:url("img/main_logo_background.jpg");
+	background-image:url("../img/main_logo_background.jpg");
 	background-position:50% 50%;
 	background-repeat:no-repeat;
 	background-color:blue;
 	overflow:hidden;
+	Z-index:5;
 }
 .main-logo-text{
 	display:block;
