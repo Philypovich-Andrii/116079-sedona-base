@@ -25,7 +25,7 @@ span{
 .container {
 	width:1200px;
 	margin:0 auto;
-	background-color:green;
+	background-color:#b7f7cc;
 }
 header{
 	background-color:#ffffff;
@@ -67,8 +67,23 @@ width:20%;
 }
 .index-logo{
 	position:relative;
+	background-image:url("img/main_logo_background.jpg");
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+	background-color:blue;
+	overflow:hidden;
+}
+.main-logo-text{
+	display:block;
+	margin-top: 76px;
+	margin-bottom:80px;
+	margin-left:auto;
+	margin-right:auto;	
 }
 .main-logo-background-mask{
+	display:block;
 	position:absolute;
 	bottom:0px;
+	margin-left:auto;
+	margin-right:auto;	
 }
