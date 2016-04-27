@@ -68,7 +68,7 @@ width:20%;
 .index-logo{
 	position:relative;
 }
-.index-logo img{
+.main-logo-background-mask{
 	position:absolute;
 	bottom:0px;
 }
