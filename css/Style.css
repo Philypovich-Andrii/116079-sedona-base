@@ -6,21 +6,18 @@ body{
 	color:#000000;
 	text-transform:uppercase;
 }
-b{
-	font-family:"PT Sans";
-	font-weight:bold;
-	font-size:21px;
-	line-height:21px;
-	color:#ffffff;
-	text-transform:uppercase;
+ p {
+	margin: 0;
+	padding: 0;
 }
-span{
-	font-family:"PT Sans";
-	font-weight:normal;
-	font-size:14px;
-	line-height:21px;
-	color:#000000;
-	text-transform:uppercase;
+ul {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+h1{
+	margin: 0;
+	padding: 0;
 }
 .container {
 	width:1200px;
@@ -54,7 +51,7 @@ header{
 	list-style:none;
 }
 .main-navigation li{
-width:20%;	
+	width:20%;	
 }
 .main-navigation li:nth-child(1), 
 .main-navigation li:nth-child(2){
@@ -69,12 +66,12 @@ width:20%;
 .index-logo{
 	position:relative;
 	background-image:url("../img/main_logo_background.jpg");
-	background-position:50% 50%;
+	background-position:0 50%;
 	background-repeat:no-repeat;
-	background-color:blue;
+	background-color:#6293bc;
 	overflow:hidden;
 	Z-index:5;
-}
+} 
 .main-logo-text{
 	display:block;
 	margin-top: 76px;
@@ -88,4 +85,8 @@ width:20%;
 	bottom:0px;
 	margin-left:auto;
 	margin-right:auto;	
+}
+.intro {
+	min-height:216px;
+	background-color:#ffffff;
 }
