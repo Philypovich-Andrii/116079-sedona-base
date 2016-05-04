@@ -7,70 +7,66 @@
 	</head>
 	<body>
 		<div class="container">
-			<header>
+			<header class="hotel-search-header">
 				<nav class="main-navigation">
 					<ul class="clearfix">
-						<li><a href="#">Информация</a></li>
-						<li><a href="#">Фото и видео</a></li>
-						<li><a href="#">Гостиницы</a></li>
-						<li><a href="#">Карта Штата</a></li>
+						<li><a href="#">информация</a></li>
+						<li><a href="#">фото и видео</a></li>
+						<li><a href="#">гостиницы</a></li>
+						<li><a href="#">карта штата</a></li>
 					</ul>
 					<a href="index.html">
 						<img src="img/small-logo.png" class="small-logo" width="138" height="70" alt="City of Sedona">
 					</a>
 				</nav>			
 			</header>
-			<main>
-				<div class="search-form">
+			<main class="hotel-search-main">
+				<div class="search-form clearfix">
 					<form action="https://echo.htmlacademy.ru" method="post">
 						<div class="form-left-item">
 							<fieldset>
-								<legend>Инфраструктура</legend>
+								<legend>инфраструктура</legend>
 								<input type="checkbox" name="pool-field" id="pool" checked>
-								<label for="pool">Бассейн</label>
+								<label for="pool">бассейн</label>
 								<input type="checkbox" name="parking-field" id="parking">
-								<label for="parking">Парковка</label>
+								<label for="parking">парковка</label>
 								<input type="checkbox" name="wifi-field" id="wifi">
 								<label for="wifi">wi-fi</label>
 							</fieldset>
 						</div>
 						<div class="form-middle-item">
 							<fieldset>
-								<legend>Тип жилья</legend>
+								<legend>тип жилья</legend>
 								<input type="checkbox" name="hotel-field" id="hotel" checked>
-								<label for="hotel">Гостиница</label>
+								<label for="hotel">гостиница</label>
 								<input type="checkbox" name="motel-field" id="motel" checked>
-								<label for="motel">Мотель</label>
+								<label for="motel">мотель</label>
 								<input type="checkbox" name="apartment-field" id="apartment" checked>
-								<label for="apartment">Апартаменты</label>
+								<label for="apartment">апартаменты</label>
 							</fieldset>
 						</div>
 						<div class="form-right-item">
 							<fieldset>
-								<legend>Стоимость в сутки (р):</legend>
-								<div class="price-container">
-									<div class="price-item">
-										<label class="min-price">От <input type="text" name="min-price" value="0"></label>
-									</div>
-									<div class="price-item">
-										<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-									</div>
-									<div class="price-choose">
-										<div class="price-scale">
-											<div class="price-bar"></div>
-										</div>	
-										<div class="point min-point"></div>
-										<div class="point max-point"></div>
-									</div>
+								<legend>стоимость в сутки (р):</legend>
+								<div class="price-controls">
+									<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+									<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
 								</div>
-								<input type="Submit" name="show" id="show-button" value="Показать">
+								<div class="range-controls">
+									<div class="price-scale">
+										<div class="price-bar"></div>
+									</div>	
+									<div class="point min-point"></div>
+									<div class="point max-point"></div>
+								</div>
+								<input type="Submit" class="btn btn-transparent" name="show" id="show-button" value="Показать">
 							</fieldset>
 						</div>
 					</form>
 				</div>
 				<div class="search-result-header">
-					<span>Найдено:</span><output name="Result"></output>
-					<span>Сортировка:</span>
+					<span class="search-result-header-title">Найдено:</span><output name="Result"></output>
+					<span class="search-result-header-sort">Сортировка:</span>
 					<a href="#" class="sort active">по цене</a>
 					<a href="#" class="sort not-active">по типу</a>
 					<a href="#" class="sort not-active">по рейтингу</a>
@@ -78,9 +74,9 @@
 					<span class="down"></span>
 				</div>
 				<div class="search-result">
-					<div class="search-result-item">
+					<div class="search-result-item clearfix">
 						<div class="search-result-item-left">
-							<img src="img/hotel-amara.png"  width="60" height="60" alt="hotel-amara">
+							<img src="img/hotel-amara.png" width="135" height="90" alt="hotel-amara">
 						</div>
 						<div class="search-result-item-mid">
 							<p class="search-result-hotel-name">Amara-resort & SPA</p>
@@ -101,7 +97,7 @@
 					</div>
 					<div class="search-result-item">
 						<div class="search-result-item-left">
-							<img src="img/hotel-desert.png"  width="60" height="60" alt="hotel-desert">
+							<img src="img/hotel-desert.png" width="135" height="90" alt="hotel-desert">
 						</div>
 						<div class="search-result-item-mid">
 							<p class="search-result-hotel-name">Desert quail inn</p>
@@ -122,7 +118,7 @@
 					</div>
 					<div class="search-result-item">
 						<div class="search-result-item-left">
-							<img src="img/hotel-villas.png"  width="60" height="60" alt="hotel-villas">
+							<img src="img/hotel-villas.png" width="135" height="90" alt="hotel-villas">
 						</div>
 						<div class="search-result-item-mid">
 							<p class="search-result-hotel-name">Villas at poco diablo</p>
@@ -143,20 +139,22 @@
 					</div>
 				</div>
 			</main>
-			<footer>
-				<div class="footer-Hashtag">
-					<a href="#">#Visitsedona</a>
-				</div>
-				<div class="footer-social">
-					<a class="social-btn social-btn-tw" href="#">twitter</a>
-					<a class="social-btn social-btn-fb" href="#">Facebook</a>
-					<a class="social-btn social-btn-ytb" href="#">Youtube</a>
-				</div>
-				<div class="footer-copyright">
-					<p>Website by</p>
-					<a class="btn" href="https://htmlacademy.ru">
-						<img src="img/html-academy.png" alt="HTML Academy">
-					</a>
+			<footer class="hotel-search-footer">
+				<div class="footer-container">
+					<div class="footer-hashtag">
+						<a href="#">#Visitsedona</a>
+					</div>
+					<div class="footer-social">
+						<a class="social-btn social-btn-tw" href="#">twitter</a>
+						<a class="social-btn social-btn-fb" href="#">Facebook</a>
+						<a class="social-btn social-btn-ytb" href="#">Youtube</a>
+					</div>
+					<div class="footer-copyright">
+						<p>Website by</p>
+						<a class="btn" href="https://htmlacademy.ru">
+							<img src="img/html-academy.png" alt="HTML Academy">
+						</a>
+					</div>
 				</div>
 			</footer>
 		</div>

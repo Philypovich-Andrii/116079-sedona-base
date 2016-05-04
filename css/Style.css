@@ -19,12 +19,16 @@ h1{
 	margin: 0;
 	padding: 0;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .container {
 	width:1200px;
 	margin:0 auto;
 	background-color:#b7f7cc;
 }
-header{
+.index-header, .hotel-search-header{
 	background-color:#ffffff;
 	padding:0 6%;
 	position:relative;
@@ -74,7 +78,7 @@ header{
 } 
 .main-logo-text{
 	display:block;
-	margin-top: 76px;
+	margin-top:76px;
 	margin-bottom:80px;
 	margin-left:auto;
 	margin-right:auto;	
@@ -93,7 +97,7 @@ header{
 .intro b{
 	display:block;
 }
-.intro b, p{
+.intro b, .intro p{
 	text-align:center;
 }
 
@@ -104,10 +108,10 @@ header{
 	box-sizing:border-box;
 	width:400px;
 }
-.advantage-description b, span{
+.advantage-description b, .advantage-description span{
 	display:block;
 }
-.advantage-description b, span, p{
+.advantage-description b, .advantage-description span, .advantage-description p{
 	text-align:center;
 }
 .advantage-img{
@@ -145,7 +149,7 @@ header{
 .feature b{
 	display:block;
 }
-.feature b, p{
+.feature b, .feature p{
 	text-align:center;
 }
 .feature-image{
@@ -156,10 +160,10 @@ header{
 	min-height:291px;
 	background-color:#ffffff;
 }
-.hotel-search-head b, a{
+.hotel-search-head b, .hotel-search-head a{
 	display:block;
 }
-.hotel-search-head b, a, p{
+.hotel-search-head b, .hotel-search-head a, .hotel-search-head p{
 	text-align:center;
 }
 .hotel-search-form{
@@ -170,7 +174,7 @@ header{
 	margin-right:auto;
 	background-color:#ffffff;
 }
-footer{
+.index-footer{
 	min-height:593px;
 	position:relative;
 }
@@ -186,4 +190,51 @@ footer{
 .footer-hashtag, .footer-social, .footer-copyright{
 	width:400px;
 	float:left;
+}
+.search-form{
+	min-height:217px;
+	background-image:url("../img/hotel_search_background.jpg");
+	background-position:0 50%;
+	background-repeat:no-repeat;
+	background-color:#6a6e74;
+	color:#FFFFFF;
+	overflow:hidden;
+	Z-index:5;
+}
+.form-left-item{
+	box-sizing:border-box;
+	width:240px;
+	float:left;
+}
+.form-middle-item{
+	box-sizing:border-box;
+	width:288px;
+	float:left;
+}
+.form-right-item{
+	box-sizing:border-box;
+	width:328px;
+	float:right;
+}
+.search-result-header{
+	min-height: 87px;
+}
+.search-result-item{
+	min-height: 151px;
+}
+.search-result-item-left{
+	float:left;
+	margin-left:72px;
+}
+.search-result-item-left img{
+	width:135px;
+	height:90px;
+}
+.search-result-item-mid{
+	float:left;
+	margin-left:30px;
+}
+.search-result-item-right{
+	float:right;
+	margin-right:72px;
 }
