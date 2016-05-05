@@ -70,7 +70,7 @@ img {
 .index-logo{
 	position:relative;
 	background-image:url("../img/main_logo_background.jpg");
-	background-position:0 50%;
+	background-position:0 21%;
 	background-repeat:no-repeat;
 	background-color:#6293bc;
 	overflow:hidden;
@@ -183,7 +183,7 @@ img {
 	height:593px;
 }
 .footer-container{
-	min-height:120px;
+/* 	min-height:120px; */
 	background-color:#fdfdfd;
 	opacity:0.9;
 }
