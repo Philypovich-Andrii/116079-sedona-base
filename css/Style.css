@@ -47,7 +47,7 @@ img {
 	content:"";
 
 	display:table;
-	clear both;
+	clear: both;
 }
 .main-navigation{
 	box-sizing:border-box;
