@@ -44,10 +44,10 @@ img {
 	Z-index:10;
 }
 .clearfix::after {
-	content: "";
+	content:"";
 
-	display: table;
-	clear: both;
+	display:table;
+	clear both;
 }
 .main-navigation{
 	box-sizing:border-box;
@@ -59,11 +59,8 @@ img {
 	padding:0px;
 	
 	list-style:none;
-	/*! font-size:0; */
 }
 .main-navigation li{
-	/*! display:inline-block; */
-	/*! vertical-align:top; */
 	box-sizing:border-box;
 	
 	width:20%;	
@@ -88,10 +85,9 @@ img {
 	padding-right:30px;
 }
 .main-navigation a{
-/* 	display: block; */
-	
 	color:#000000;
 	text-decoration:none;
+	font-weight: bold;
 }
 .index-logo{
 	position:relative;
@@ -116,29 +112,88 @@ img {
 	margin-left:auto;
 	margin-right:auto;	
 }
-.intro {
-	min-height:216px;
+.intro{
+	box-sizing:border-box;
+	height:216px;
+	padding-top:60px;
+	padding-bottom:57px;
+	padding-left:100px; /*взял с потолка, просто чтоб был*/
+	padding-right:100px; /*взял с потолка, просто чтоб был*/
+	
 	background-color:#ffffff;
+	color:#000000;
 }
-.intro b{
-	display:block;
+.intro-name{
+	font-size:21px;
+	line-height:26px;
+	font-weight:bold;
+	text-align:center;
+	
+	margin-bottom:27px;
 }
-.intro b, .intro p{
+.intro-description{
+	font-size:14px;
+	line-height:26px;
 	text-align:center;
 }
-
 .advantages{
 	min-height:256px;
 }
 .advantage-description{
 	box-sizing:border-box;
 	width:400px;
+	height:256px;
+		
+	padding-top:53px;
+	padding-bottom:57px;
+	padding-left:60px;
+	padding-right:60px;
 }
-.advantage-description b, .advantage-description span{
+.advantage-description span{
 	display:block;
 }
-.advantage-description b, .advantage-description span, .advantage-description p{
+.advantage-description span, .advantage-description p{
 	text-align:center;
+}
+.advantage-name{
+	font-size:21px;
+	line-height:21px;
+	font-weight:bold;
+	
+	margin-bottom:24px;
+}
+.advantage-number{
+	font-size:14px;
+	line-height:21px;
+	
+	position:relative;
+	margin-bottom: 21px;
+}
+.advantage-number::before{
+	content:"";
+	border-bottom:2px solid #FFFFFF;
+	
+	display:block;
+	width:9px;
+	
+	position:absolute;
+	top:11px;
+	left:115px;
+}
+.advantage-number::after{
+	content:"";
+	border-bottom:2px solid #FFFFFF;
+	
+	display:block;
+	width:9px;
+	
+	position:absolute;
+	top:11px;
+	right:115px;
+}
+.advantage-text{
+	font-size:14px;
+	line-height:21px;
 }
 .advantage-img{
 	width:800px;
@@ -147,6 +202,7 @@ img {
 .advantage1 .advantage-description{
 	float:left;
 	background-color:#81b3d2;
+	color:#ffffff;
 }
 .advantage1 .advantage-img{
 	float:right;
@@ -154,6 +210,7 @@ img {
 .advantage2 .advantage-description{
 	float:right;
 	background-color:#81b3d2;
+	color:#ffffff;
 }
 .advantage2 .advantage-img{
 	float:left;
@@ -162,7 +219,7 @@ img {
 	float:left;
 	background-color:#eeeeee;
 }
-	
+
 .features{
 	min-height:330px;
 }
@@ -170,18 +227,43 @@ img {
 	background-color:#ffffff;
 	box-sizing:border-box;
 	width:400px;
+	height:330px;
+	padding-top:58px;
+	padding-bottom:84px;
+	padding-left:50px;
+	padding-right:50px;
+	
 	float:left;
 }
-.feature b{
+.feature-img{
+	box-sizing:border-box;
+	width:80px;
+	height:80px;
+	margin-left:auto;
+	margin-right:auto;	
+	margin-bottom: 23px;
+}
+.feature-img img{
 	display:block;
+	margin:auto;
 }
-.feature b, .feature p{
+.feature-name{
+	font-size:21px;
+	line-height:21px;
+	font-weight:bold;
+	
+	margin-bottom:24px;
+}
+.feature-text{
+	font-size:14px;
+	line-height:21px;
+}
+.feature-description p{
 	text-align:center;
-}
-.feature-image{
 	margin-left:auto;
 	margin-right:auto;	
 }
+
 .hotel-search-head{
 	min-height:291px;
 	background-color:#ffffff;
