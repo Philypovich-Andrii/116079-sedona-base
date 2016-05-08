@@ -32,6 +32,7 @@ img {
 }
 .index-header, .hotel-search-header{
 	background-color:#ffffff;
+	color:#000000;
 	padding:0 6%;
 	position:relative;
 }
@@ -49,15 +50,26 @@ img {
 	clear: both;
 }
 .main-navigation{
-	min-height:56px;
+	box-sizing:border-box;
+	height:56px;
+	padding-top:13px;
 }
 .main-navigation ul{
 	margin:0px;
 	padding:0px;
+	
 	list-style:none;
+	/*! font-size:0; */
 }
 .main-navigation li{
+	/*! display:inline-block; */
+	/*! vertical-align:top; */
+	box-sizing:border-box;
+	
 	width:20%;	
+	
+	font-size:14px;
+	line-height:26px;
 }
 .main-navigation li:nth-child(1), 
 .main-navigation li:nth-child(2){
@@ -68,6 +80,18 @@ img {
 .main-navigation li:nth-child(4){
 	float:right;
 	text-align:right;
+}
+.main-navigation li:nth-child(2){
+	padding-left:30px;
+}
+.main-navigation li:nth-child(3){
+	padding-right:30px;
+}
+.main-navigation a{
+/* 	display: block; */
+	
+	color:#000000;
+	text-decoration:none;
 }
 .index-logo{
 	position:relative;
