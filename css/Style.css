@@ -364,10 +364,15 @@ img {
 	margin-left:auto;
 	margin-right:auto;
 	background-color:#ffffff;
-	display:none;
+	color:#000000;
+/* 	display:none; */
 }
 .index-footer{
 	min-height:593px;
+	position:relative;
+}
+.hotel-search-footer{
+	height:120px;
 	position:relative;
 }
 .map{
@@ -424,7 +429,7 @@ img {
 	text-align:center;
 }
 .social-btn span{
-/* 	position:absolute; */
+
 	font-size:19px;
 	line-height:48px;
 }
@@ -435,7 +440,7 @@ img {
 .footer-copyright span{
 	display:inline-block;
 	vertical-align:top;
-	margin-top: 5px;
+	margin-top:5px;
 	
 	
 	font-size:14px;
@@ -469,14 +474,72 @@ img {
 	float:right;
 }
 .search-result-header{
-	min-height: 87px;
+	box-sizing:border-box;
+	height: 87px;
+	
+	padding-top:29px;
+	padding-bottom:25px;
+	padding-left:72px;
+	padding-right:72px;
+}
+.search-result-header-title{
+	display:inline-block;
+	vertical-align:baseline;
+		
+	font-size:21px;
+	line-height:26px;
+	font-weight:bold;
+	color:#000000;
+}
+.search-result-header output{
+	display:inline-block;
+	vertical-align:baseline;
+	margin-left:5px;
+	
+	font-size:21px;
+	line-height:26px;
+	font-weight:bold;
+	color:#000000;
+}
+.search-result-header-sort{
+	display:inline-block;
+	vertical-align:baseline;
+	margin-left:44px;
+		
+	font-size:12px;
+	line-height:18px;
+	color:#000000;
+}
+.search-result-header .sort{
+	display:inline-block;
+	vertical-align:baseline;
+
+	font-size:12px;
+	line-height:18px;
+}
+.search-result-header .active{
+	margin-left:37px;
+	color:#81b3d2;
+	text-decoration: none;
+}
+.search-result-header .passive{
+	margin-left:37px;
+	color:#000000;
+	opacity:0.3;
+	text-decoration:underline;
 }
 .search-result-item{
-	min-height: 151px;
+	box-sizing:border-box;
+	height: 151px;
+	
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:72px;
+	padding-right:72px;
 }
 .search-result-item-left{
 	float:left;
-	margin-left:72px;
+
 }
 .search-result-item-left img{
 	width:135px;
