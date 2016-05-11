@@ -91,7 +91,7 @@ img {
 }
 .main-navigation{
 	box-sizing:border-box;
-	height:56px;
+	min-height:56px;
 	padding-top:13px;
 }
 .main-navigation ul{
@@ -121,8 +121,8 @@ img {
 .main-navigation li:nth-child(2){
 	padding-left:30px;
 }
-.main-navigation li:nth-child(3){
-	padding-right:30px;
+.main-navigation li:nth-child(4){
+	padding-right:34px;
 }
 .main-navigation a{
 	color:#000000;
@@ -154,9 +154,9 @@ img {
 }
 .intro{
 	box-sizing:border-box;
-	height:216px;
+	min-height:216px;
 	padding-top:60px;
-	padding-bottom:57px;
+	padding-bottom:50px;
 	padding-left:100px; /*взял с потолка, просто чтоб был*/
 	padding-right:100px; /*взял с потолка, просто чтоб был*/
 	
@@ -182,16 +182,18 @@ img {
 .advantage-description{
 	box-sizing:border-box;
 	width:400px;
-	height:256px;
+	min-height:256px;
 		
 	padding-top:53px;
-	padding-bottom:57px;
-	padding-left:60px;
-	padding-right:60px;
+	padding-bottom:50px;
+	padding-left:45px;
+	padding-right:45px;
+	
+	text-align:center;
 }
-.advantage-description span{
+/* .advantage-description span{
 	display:block;
-}
+} */
 .advantage-description span, .advantage-description p{
 	text-align:center;
 }
@@ -200,36 +202,42 @@ img {
 	line-height:21px;
 	font-weight:bold;
 	
-	margin-bottom:24px;
+	margin-bottom:22px;
 }
 .advantage-number{
+	display:inline-block;
+	
 	font-size:14px;
 	line-height:21px;
 	
 	position:relative;
+	padding:0 15px;
+	
 	margin-bottom: 21px;
 }
 .advantage-number::before{
 	content:"";
 	border-bottom:2px solid #FFFFFF;
+	border-color:inherit;
 	
-	display:block;
+	display:inline-block;
 	width:9px;
 	
 	position:absolute;
 	top:11px;
-	left:115px;
+	padding-right:0px;
 }
 .advantage-number::after{
 	content:"";
 	border-bottom:2px solid #FFFFFF;
+	border-color:inherit;
 	
-	display:block;
+	display:inline-block;
 	width:9px;
 	
 	position:absolute;
 	top:11px;
-	right:115px;
+	padding-left:0px;
 }
 .advantage-text{
 	font-size:14px;
@@ -258,6 +266,7 @@ img {
 .advantages-other .advantage-description{
 	float:left;
 	background-color:#eeeeee;
+	padding-top:45px;
 }
 
 .features{
@@ -267,7 +276,7 @@ img {
 	background-color:#ffffff;
 	box-sizing:border-box;
 	width:400px;
-	height:330px;
+	min-height:330px;
 	padding-top:58px;
 	padding-bottom:84px;
 	padding-left:50px;
@@ -306,15 +315,16 @@ img {
 
 .hotel-search-head{
 	box-sizing:border-box;
-	height:291px;
+	min-height:290px;
 	position:relative;
 	
-	padding-top:56px;
-	padding-bottom:96px;
+	padding-top:55px;
+	/*! padding-bottom:3px; */
 	padding-left:316px;
 	padding-right:316px;
 		
 	background-color:#ffffff;
+	-moz-animation-play-state: ;
 }
 .hotel-search-head-name{
 	font-size:30px;
@@ -336,8 +346,8 @@ img {
 	width:568px;
 	height:86px;
 	
-	padding-top:30px;
-	padding-bottom:30px;
+	padding-top:29px;
+	padding-bottom:25px;
 	padding-left:84px;
 	padding-right:84px;
 	
@@ -359,20 +369,20 @@ img {
 }
 .hotel-search-form{
 	box-sizing:border-box;
-	height: 395px;
+	min-height: 395px;
 	width: 568px;
 	margin-left:auto;
 	margin-right:auto;
 	background-color:#ffffff;
 	color:#000000;
-/* 	display:none; */
+/*! display:none; */
 }
 .index-footer{
 	min-height:593px;
 	position:relative;
 }
 .hotel-search-footer{
-	height:120px;
+	min-height:120px;
 	position:relative;
 }
 .map{
@@ -394,7 +404,7 @@ img {
 	float:left;
 	box-sizing:border-box;
 	width:400px;
-	height: 120px;
+	min-height: 120px;
 
 	text-align:center;
 }
