@@ -191,9 +191,6 @@ img {
 	
 	text-align:center;
 }
-/* .advantage-description span{
-	display:block;
-} */
 .advantage-description span, .advantage-description p{
 	text-align:center;
 }
@@ -226,6 +223,7 @@ img {
 	position:absolute;
 	top:11px;
 	padding-right:0px;
+	left: 0;
 }
 .advantage-number::after{
 	content:"";
@@ -238,6 +236,7 @@ img {
 	position:absolute;
 	top:11px;
 	padding-left:0px;
+	right: 0;
 }
 .advantage-text{
 	font-size:14px;
@@ -457,7 +456,7 @@ img {
 	line-height:26px;
 	color:#000000;
 }
-
+/* Стили внутренней страницы */
 .search-form{
 	min-height:217px;
 	background-image:url("../img/hotel_search_background.jpg");
@@ -485,12 +484,12 @@ img {
 }
 .search-result-header{
 	box-sizing:border-box;
-	height: 87px;
+	min-height: 87px;
 	
 	padding-top:29px;
 	padding-bottom:25px;
 	padding-left:72px;
-	padding-right:72px;
+	padding-right:61px;
 }
 .search-result-header-title{
 	display:inline-block;
@@ -533,16 +532,36 @@ img {
 	text-decoration: none;
 }
 .search-result-header .passive{
-	margin-left:37px;
+	margin-left:29px;
 	color:#000000;
 	opacity:0.3;
 	text-decoration:underline;
 }
+.arrow{
+	display:inline-block;
+	vertical-align:top;
+	font-size:0;
+	width:33px;
+	height:33px;
+	margin-top: 3px;
+}
+.arrow-passive{
+	color:#cccccc;
+	margin-left:489px;
+}
+.arrow-active{
+	color:#81b3d2;
+	margin-left:-14px;
+}
+.arrow-passive span, .arrow-active span{
+	font-size:23px;
+	line-height:20px;
+}
 .search-result-item{
 	box-sizing:border-box;
-	height: 151px;
+	min-height: 151px;
 	
-	padding-top:25px;
+	padding-top:27px;
 	padding-bottom:25px;
 	padding-left:72px;
 	padding-right:72px;
@@ -556,6 +575,9 @@ img {
 	height:90px;
 }
 .search-result-item-mid{
+	box-sizing:border-box;
+	width:360px;
+	
 	float:left;
 	margin-left:30px;
 }
