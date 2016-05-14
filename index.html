@@ -97,45 +97,43 @@
 					</div>
 				</div>
 				<div class="hotel-search-head">
-					<p class="hotel-search-head-name">Заинтересовались?</p>
-					<p class="hotel-search-head-text">Укажите предполагаемые даты поездки,<br>
-					и мы покажем Вам лучшие предложения гостиниц в седоне</p>
+					<p class="hotel-search-head-name">заинтересовались?</p>
+					<p class="hotel-search-head-text">укажите предполагаемые даты поездки,<br>
+					и мы покажем вам лучшие предложения гостиниц в седоне</p>
 					<div class="hotel-search-head-btn">
-						<a href="#" class="btn hotel-search-btn">Поиск гостиницы в седоне</a>
+						<a href="#" class="btn hotel-search-btn">поиск гостиницы в седоне</a>
 					</div>
-				</div>
-				<div class="hotel-search-form">
-					<form action="https://echo.htmlacademy.ru" method="post">
-						<div class="form-item-row">
-							<label for="arrival-date">Дата заезда</label>
-							<input type="text" name="arrival-date-field" id="arrival-date" value="24 апреля 2016">
-							<div class="icon-calendar">
-								<img src="img/calendar" class="calendar" width="20" height="20" alt="calendar">
+					<div class="hotel-search-form">
+						<form class="clearfix" action="https://echo.htmlacademy.ru" method="post">
+							<div class="form-item-row">
+								<label class="form-item-label" for="arrival-date">дата заезда:</label>
+								<input class="form-date-field" type="text" name="arrival-date-field" id="arrival-date" value="24 апреля 2016">
+								<button class="calendar" href="#">calendar <span class="icon-calendar"></span></button>
 							</div>
-						</div>
-						<div class="form-item-row">
-							<label for="departure-date">Дата выезда</label>
-							<input type="text" name="departure-date-field" id="departure-date" value="4 июля 2016">
-							<div class="icon-calendar">
-								<img src="img/calendar" class="calendar" width="20" height="20" alt="calendar">
+							<div class="form-item-row">
+								<label class="form-item-label" for="departure-date">дата выезда:</label>
+								<input class="form-date-field" type="text" name="departure-date-field" id="departure-date" value="4 июля 2016">
+								<button class="calendar" href="#">calendar <span class="icon-calendar"></span></button>
 							</div>
-						</div>
-						<div class="form-item-row">
-							<label for="adults-amount">Взрослые</label>
-							<div class="form-item-rangeblock">
-								<span class="minus">-</span>
-								<input type="number" name="adults-amount-field" id="adults-amount" min="1" max="1000">
-								<span class="plus">+</span>
+							<div class="form-item-row">
+								<label class="form-item-label" for="adults-amount">взрослые:</label>
+								<div class="form-item-rangeblock">
+									<button class="minus" href="#">-<span class="icon-minus"></span></button>
+									<input class="form-amount-field" type="text" name="adults-amount-field" id="adults-amount" min="1" max="50" value="2">
+									<button class="plus" href="#">+<span class="icon-plus"></span></button>
+								</div>
+								<label class="form-item-label form-item-label-right" for="children-amount">дети:</label>
+								<div class="form-item-rangeblock">
+									<button class="minus" href="#">-<span class="icon-minus"></span></button>
+									<input class="form-amount-field" type="text" name="children-amount-field" id="children-amount" min="0" max="50" value="0">
+									<button class="plus" href="#">+<span class="icon-plus"></span></button>
+								</div>
 							</div>
-							<label for="children-amount">Дети</label>
-							<div class="form-item-rangeblock">
-								<span class="minus">-</span>
-								<input type="number" name="children-amount-field" id="children-amount" min="0" max="1000">
-								<span class="plus">+</span>
+							<div class="form-find-btn">
+								<button class="btn find-btn" type="Submit" name="Find" id="find-item-button">найти</button>
 							</div>
-						</div>
-						<input type="Submit" name="Find" id="find-item-button" value="Найти">
-					</form>
+						</form>
+					</div>
 				</div>
 			</main>
 			<footer class="index-footer">
