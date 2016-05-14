@@ -25,31 +25,49 @@
 			<main class="hotel-search-main">
 				<div class="search-form clearfix">
 					<form class="clearfix" action="https://echo.htmlacademy.ru" method="post">
-						<div class="form-left-item">
+						<div class="search-form-left-item">
 							<fieldset>
-								<legend>инфраструктура</legend>
-								<input type="checkbox" name="pool-field" id="pool" checked>
-								<label for="pool">бассейн</label>
-								<input type="checkbox" name="parking-field" id="parking">
-								<label for="parking">парковка</label>
-								<input type="checkbox" name="wifi-field" id="wifi">
-								<label for="wifi">wi-fi</label>
+								<legend class="search-form-legend">инфраструктура</legend>
+								<label class="search-form-checkbox">
+									<input type="checkbox" name="pool-field" id="pool" checked>
+									<span class="checkbox-indicator"></span>
+									бассейн
+								</label>
+								<label class="search-form-checkbox">
+									<input type="checkbox" name="parking-field" id="parking">
+									<span class="checkbox-indicator"></span>
+									парковка
+								</label>
+								<label class="search-form-checkbox">
+									<input type="checkbox" name="wifi-field" id="wifi">
+									<span class="checkbox-indicator"></span>
+									wi-fi
+								</label>
 							</fieldset>
 						</div>
-						<div class="form-middle-item">
+						<div class="search-form-middle-item">
 							<fieldset>
-								<legend>тип жилья</legend>
-								<input type="checkbox" name="hotel-field" id="hotel" checked>
-								<label for="hotel">гостиница</label>
-								<input type="checkbox" name="motel-field" id="motel" checked>
-								<label for="motel">мотель</label>
-								<input type="checkbox" name="apartment-field" id="apartment" checked>
-								<label for="apartment">апартаменты</label>
+								<legend class="search-form-legend">тип жилья</legend>
+								<label class="search-form-checkbox">
+									<input type="checkbox" name="hotel-field" id="hotel" checked>
+									<span class="checkbox-indicator"></span>
+									гостиница
+								</label>
+								<label class="search-form-checkbox">
+									<input type="checkbox" name="motel-field" id="motel" checked>
+									<span class="checkbox-indicator"></span>
+									мотель
+								</label>
+								<label class="search-form-checkbox">
+									<input type="checkbox" name="apartment-field" id="apartment" checked>
+									<span class="checkbox-indicator"></span>
+									апартаменты
+								</label>
 							</fieldset>
 						</div>
-						<div class="form-right-item">
+						<div class="search-form-right-item">
 							<fieldset>
-								<legend>стоимость в сутки (р):</legend>
+								<legend class="search-form-legend">стоимость в сутки (р):</legend>
 								<div class="price-controls">
 									<label class="min-price">от <input type="text" name="min-price" value="0"></label>
 									<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
