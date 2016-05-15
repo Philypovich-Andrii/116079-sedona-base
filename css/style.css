@@ -466,6 +466,7 @@ img {
 	position:relative;
 	color:#ffffff;
 	text-align:center;
+	text-decoration:none;
 }
 .social-btn:hover{
 	background-color:#669ec0;
@@ -805,6 +806,7 @@ img {
 	background-color:#f2f2f2;
 	box-sizing:border-box;
 	width:340px;
+	height:35px;
 	padding-left:10px;
 }
 .form-date-field:hover{
@@ -830,8 +832,8 @@ img {
 	font-size:21px;
 	line-height:26px;
 	font-weight:bold;
-	background-color:inherit;
-	color:inherit;
+	background-color:#81b3d2;
+	color:#FFFFFF;
 	
 	padding-top:14px;
 	padding-left:196px;
@@ -839,7 +841,14 @@ img {
 .form-find-btn:hover{
 	background-color:#669ec0;
 }
+.find-btn:hover{
+	background-color:#669ec0;
+}
 .form-find-btn:active{
+	background-color:#5496bd;
+	color:rgba(255, 255, 255, 0.3);
+}
+.find-btn:active{
 	background-color:#5496bd;
 	color:rgba(255, 255, 255, 0.3);
 }
@@ -987,6 +996,7 @@ img {
 }
 .price-controls input {
 	width: 50px;
+	height:31px;
 	margin: 0;
 	
 	color: inherit;
